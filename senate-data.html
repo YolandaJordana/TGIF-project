@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TGIF</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="Style/estilos.css">
+</head>
+
+<body>
+    <!-------------------HEADER---------------->
+    <div class="container panel panel-default">
+
+        <header>
+
+            <img class="logo" src="img/logo9.PNG">
+
+            <h1 class="titleh1">TGIF</h1>
+
+            <div class="email">
+                <a href="#">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                </a>
+
+                <a href="mailto:yjordana.ubiqum@gmail.com">info@tgif.com</a>
+
+
+            </div>
+
+
+        </header>
+
+        <!----------------NAV BAR---------------->
+
+
+
+        <nav class=" panel-heading navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">TGIF</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="house-data.html">House</a></li>
+                            <li><a href="senate-data.html">Senate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="house-attendance-starter-page.html">House</a></li>
+                            <li><a href="senate-attendance-starter-page.html">Senate</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="house-party-loyalty-starter-page.html">House</a></li>
+                            <li><a href="senate-party-loyalty-starter-page.html">Senate</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <!--Table container-->
+        <div>
+            <h2>Senators</h2>
+            <p>First convened in 1789, the composition and powers of the Senate are established in Article One of
+                the U.S.
+                Constitution. Each state is represented by two senators, regardless of population, who serve
+                staggered
+                six-year terms. The Senate has several exclusive powers not granted to the House, including
+                consenting to
+                treaties as a precondition to their ratification and consenting to or confirming appointments of
+                Cabinet
+                secretaries, federal judges, other federal executive officials, military officers, regulatory
+                officials,
+                ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached
+                by the
+                House.</p>
+        </div>
+        <div class="filters">
+            <div class="checkboxes">
+                <h4>Filter by Party:</h4>
+                <div id="check_dem_pair">
+                    <input type="checkbox" id="check_democrat" value="D">
+                    <label for="check_democrat">
+                        <h4>Democrat</h4>
+                    </label>
+                </div>
+                <div id="check_rep_pair">
+                    <input type="checkbox" id="check_republican" value="R">
+                    <label for="check_republican">
+                        <h4>Republican</h4>
+                    </label>
+                </div>
+                <div id="check_ind_pair">
+                    <input type="checkbox" id="check_independent" value="I">
+                    <label for="check_independent">
+                        <h4>Independent</h4>
+                    </label>
+                </div>
+            </div>
+            <div class="checkstate">
+                <div class="checkstate_pair">
+                    <h4>Filter by State:</h4>
+                    <select name="states" id="stateSelector">
+                        <option value="All">All States</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    <th>Name</th>
+                    <th>Party</th>
+                    <th>State</th>
+                    <th>Years in office</th>
+                    <th>% Votes</th>
+
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-center well">
+                    <span class="glyphicon glyphicon-copyright-mark"></span> YJA 2019 | All rights
+                    Reserved
+                </div>
+            </div>
+        </div>
+
+        <pre id="senate-data">
+        </pre>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <!---------------FOOTER--------------->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-center well">
+                    <span class="glyphicon glyphicon-copyright-mark"></span> YJA 2019 | All rights
+                    Reserved
+                </div>
+            </div>
+        </div>
+
+
+        <script src="senate-data.js"></script>
+        <script src="main2.js"></script>
+
+
+
+
+
+</body>
+
+</html>
